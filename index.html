@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Naruto Coffee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+  </head>
+  
+  <body onload="playAudio()">
+
+    <iframe src="audio/silence.mp3" allow="autoplay" id="audio" hidden></iframe> 
+    <audio id="myAudio" src="audio/dailylife.mp3" controls autoplay hidden></audio>
+        
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+
+      <div class="menu">
+        <UL>
+          <li><a href="menu(SAKI0522).html">Menu</a> </li> 
+          <li><a href="info.html">Info</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+        </UL>
+    </div>
+    </div>
+  
+  <div class="audiob">
+    <button onclick="toggleAudio()">Music Switch</button>
+  </div>
+
+  <div class="about">
+
+    <div class="container">
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/img1.png"></div>
+          <div class="swiper-slide"><img src="images/img2.png"></div>
+          <div class="swiper-slide"><img src="images/img3.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+  
+    </div>
+
+    <div class="aboutt">
+    <h1>About Naruto Coffee</h1>
+      <p>Nestled in the heart of Tokyo, Naruto Coffee 
+        is a serene haven for coffee enthusiasts. As you step 
+        inside, the aromatic symphony of freshly brewed beans 
+        envelops you, transporting you to a realm of pure indulgence. 
+        The rustic wooden furniture, adorned with subtle 
+        anime-inspired artwork, adds a touch of whimsy to the 
+        ambiance. Baristas clad in vibrant orange aprons skillfully 
+        craft each cup, ensuring a flawless balance of flavors. 
+        From velvety lattes to robust pour-overs, Naruto Coffee 
+        takes pride in serving the finest blends sourced from exotic 
+        locales. Savor a moment of tranquility and awaken your senses 
+        at Naruto Coffee, where coffee becomes an art.</p>
+    </div>
+  </div>
+  
+  <div class="easteregg">
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran"><p>don`t click me</p></a>
+  </div>
+    
+  </body>
+
+  <script src="script.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    }); 
+
+  </script>
+  </body>
+</html>
