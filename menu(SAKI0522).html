@@ -1,68 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
-   <link rel="stylesheet" href="style.css">
-   <meta charset="UTF-8">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="css/style(SAKI0522).css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/hmenu.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-   
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">   
+  </head>
 
-</head>
-<body>
-  <div class="header">
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-    </div>
-    <div class="mlogo">
-      <h1>MENU</h1>
-    </div>
-  </div>
-
-  <h2><em>Ideal</em> for a breakfast bite, your morning coffee, a sumptuous lunch or afternoon </h2>
-  <section>
-    <div class="drink">
-      <div class="menucolor">
-        <h2>&#60;Drink Menu&#62;</h2>
-        <p>・Espresso     $7</p>
-        <img src="images/Coffee.jpg" alt="Coffee">  
-        <p>・Cappucino    $7</p>
-        <img src="images/Cappucino.jpg" alt="cappucino">
-        <p>・Matcha Latte $7</p>
-        <img src="images/Mattcha.jpg" alt="Matcha">         
-        <p>・Tea          $5</p>  
-        <img src="images/tea.jpg" alt="Tea"> 
+  <body>
+    <!-- nav bar -->
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="logo">
       </div>
+  
+      <div class="menu">
+        <ul>
+          <li><a href="menu(SAKI0522).html">MENU</a> </li>
+          <li><a href="info.html">INFO</a></li>
+          <li><a href="reservation.html">RESERVATIONS</a></li>
+        </ul>
+      </div>
+  
     </div>
-    
-    <div class="food">
+  
+    <label class="h-menu">
+  
+      <input type="checkbox">
+  
+    </label>
+  
+    <aside class="sidebar">
+  
+      <nav>
+  
+          <div class="hambutton"><a href="menu(SAKI0522).html"><p>MENU</p></a><div>
+          <div class="hambutton"><a href="info.html"><p>INFO</p></a><div>
+          <div class="hambutton"><a href="reservation.html"><p>RESERVATIONS</p></a></div>
+  
+      </nav>
+  
+    </aside>
+  
+  
+    <!-- menu page -->
+    <section class="flex">
+      <div class="floatmenu">
+        <img src="./images/beans.jpg" alt="This is image of coffee beans.">
+        <h1><em>Ideal</em> for a breakfast bite, your morning coffee, a sumptuous lunch or afternoon
+        </h1>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="grid">
+        <h2>&#60;Drink Menu&#62;
+        </h2>
+      <div class="grid-menu">
+        <img src="images/Coffee.jpg" alt="This is espresso.">
+        <p>・Espresso     $7
+        </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/Cappucino.jpg" alt="This is cappucino.">
+        <p>・Cappucino    $7
+        </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/Mattcha.jpg" alt="This is matcha latte.">
+        <p>・Matcha Latte $7
+        </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/tea.jpg" alt="This is tea.">
+        <p>・Tea          $5
+        </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/juice.jpg" alt="This is juice.">
+        <p>・Juice        $6
+        </p>
+      </div>
+      <h2>&#60;Food Menu&#62;
+      </h2>
+      <div class="grid-menu">
+      <img src="images/cake1.jpg" alt="This is cake.">
+      <p>Cake $5
+      </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/cookies.jpg" alt="This is cookies.">
+        <p>Cookies $3.5
+        </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/muffin.jpg" alt="This is muffin.">
+        <p>Muffin $3.5
+        </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/gyoza.jpg" alt="This is gyoza.">
+        <p>Gyoza $7
+        </p>
+      </div>
+      <div class="grid-menu">
+        <img src="images/Ramen.jpg" alt="This is ramen.">
+        <p>Ramen $10
+        </p>
+      </div>
+     </section>
 
-      <h3>&#60;Food Menu&#62;</h3>
-      <li>Cake $5</li>
-      <div class="cake">
-       <img src="images/cake.jpg" alt="cake">
-      </div>
-    
-      <li>Cookies $3.5</li>
-      <div class="cookies">
-        <img src="images/cookies.jpg" alt="cookies">
-      </div>
-   
-      <li>Ramen $10</li>
-      <div class="ramen">
-        <img src="images/Ramen.jpg" alt="Ramen">
-      </div>
+    <div class="menubottom">
+      <p>Please consult staff if you have any <strong>allergies</strong>. If we can be of assistance, please do not hesitate to<span> contact us</span>
+      </p>
     </div>
-  </section>
-
-<div class="menubottom">
-<p>Please consult staff if you have any <strong>allergies</strong>. If we can be of assistance, please do not hesitate to<span> contact us</span>.</p>
-   <a href="index.html">Back</a>
-   </div>
-</body>
-
+    <div class="backbutton">
+      <a href="index.html">Back
+      </a>
+    </div>
+  </body>
 </html>
