@@ -1,90 +1,43 @@
 * {
     font-family: arial;
     margin: 0px;
-    padding: 0px;  
-    border-radius: 5px;   
-    
+    padding: 0px;
+    border-radius: 5px;
+
 }
 
-body{
+body {
     background-color: #ff964f;
     padding-bottom: 10px;
 }
 
-.menu {
-    margin-left: 100px;
-    background-color: antiquewhite;
-}
-
-.menu li {
-    align-items: center;
-    display: inline-block;
-}
-
-.menu li a {
-    background-color: gainsboro;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    border: 3px solid black;
-}
-
-.menu li a:hover {
-    background-color: grey;
-  }
-
-.menu ul {
+ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: antiquewhite;
-  margin: 10px;
 }
 
 .audiob {
-  margin-right: 600px;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  padding: 3px;
+    float: left;
+    margin-left: 2%;
 }
 
-.logo img {
-    height: 100px;
-    width: auto;
+.audiob button {
+    background-color: antiquewhite;
 }
 
-.logo img:hover{
-    background-color: lightgray;
-}
-
-.about {
+.container {
     display: flex;
-    align-items: right;
-    flex-direction: row;
+    width: 30vw;
+    height: 30vw;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
 }
-
-/*.about img {
-    height: 400px;
-    width: auto;
-    margin-left: 200px;
-}*/
 
 .aboutt {
     background-color: antiquewhite;
-    border: 3px solid black;
     padding: 30px;
-    max-width: 500px;
+    max-width: 70%;
     line-height: 1.5;
-    margin-left: 200px;
-    margin-right: 100px;
 }
 
 .aboutt p {
@@ -131,12 +84,12 @@ body{
     margin-right: 300px;
 }
 
-.address { 
+.address {
     background-color: antiquewhite;
     border: 3px solid black;
     padding: 20px;
-    width: 100%; 
-    margin-bottom: 20px;  
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .hours {
@@ -144,7 +97,7 @@ body{
     border: 3px solid black;
     height: auto;
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
     margin-bottom: 20px;
 }
 
@@ -152,14 +105,14 @@ body{
     float: center;
     overflow: hidden;
     width: 100%;
-    margin-top: 50px;  
-    margin-left: 150px;  
+    margin-top: 50px;
+    margin-left: 150px;
 }
 
-.reservation button{  
+.reservation button {
     height: 29px;
     width: 610px;
-    padding: 0px; 
+    padding: 0px;
     margin-bottom: 40px;
     background-color: antiquewhite;
     border: 3px solid black;
@@ -171,29 +124,10 @@ body{
     margin-left: 30%;
 }
 
-.container{
-    width: 400px;
-    height: 400px;
-    background-color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 200px;
-}
-
-.swiper {
-    width: 100%;
-    height: 400px;
-  }
-
-.swiper-slide {
-  width: 100%;
-}
-
 .easteregg p {
     font-size: 5px;
     color: #ff964f;
-    
+
 }
 
 .easteregg a:link {
@@ -203,4 +137,106 @@ body{
 .easteregg {
     width: fit-content;
     margin-left: 69px;
+}
+
+
+
+@media only screen and (min-width: 769px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: antiquewhite;
+        margin: 10px;
+    }
+
+    .logo img {
+        height: 100px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .logo img:hover {
+        background-color: lightgray;
+    }
+
+    .menu {
+        background-color: antiquewhite;
+    }
+
+    .menu li {
+        align-items: center;
+        display: inline-block;
+    }
+
+    .menu li a {
+        font-size: 1.5em;
+        text-decoration: none;
+        font-weight: 900;
+        color: black;
+        margin-right: 2em;
+        padding: 5px;
+    }
+
+    .menu li a:hover {
+        background-color: lightgray;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .h-menu {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: antiquewhite;
+        margin: 10px;
+    }
+
+    .logo img {
+        height: 100px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .logo img:hover {
+        background-color: lightgray;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
