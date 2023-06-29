@@ -34,7 +34,7 @@ body {
     text-align: center;
 }
 
-/* drinkmenu */
+/* menu */
 .grid img {
     height: auto;
     width: 50%;
@@ -90,6 +90,50 @@ body {
 
 .backbutton {
     text-align: center;
+}
+
+/* footer */
+.footercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: antiquewhite;
+    list-style: none;
+    margin-top:10px; 
+    margin-bottom: 10px;
+}
+    
+.footercontainer {
+    background-color: antiquewhite;
+}
+    
+.footercontainer li {
+    align-items: center;
+    display: inline-block;
+}
+    
+.footercontainer li a {
+    font-size: 50%;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    margin-right: 2em;
+    padding: 5px;
+}
+    
+.footercontainer li a:hover {
+    background-color: lightgray;
+}
+    
+.footercontainer ul {
+    margin: 0;
+    padding: 0;
+}
+    
+.footeritem{
+    margin: 0 20px;
 }
 
 /* tablet */
@@ -166,7 +210,6 @@ body {
         background-color: antiquewhite;
         width: 80%;
         margin-top: 10px;
-        margin-left: 20px;
         justify-content: flex-start;
     }
 
@@ -176,6 +219,47 @@ body {
 
     .backbutton {
         text-align: left;
+    }
+
+    /* footer */
+    .footercontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: antiquewhite;
+        list-style: none;
+        margin-top:10px; 
+        margin-bottom: 10px;
+    }
+    
+
+    .footercontainer li {
+        align-items: center;
+        display: inline-block;
+    }
+    
+    .footercontainer li a {
+        font-size: 1.5em;
+        text-decoration: none;
+        font-weight: 900;
+        color: black;
+        margin-right: 2em;
+        padding: 5px;
+    }
+    
+    .footercontainer li a:hover {
+        background-color: lightgray;
+    }
+    
+    .footercontainer ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footeritem{
+        margin: 0 20px;
     }
 
 }
