@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="css/hmenu.css">
 </head>
 
-<body onload="playAudio()">
+<style>@media (min-width: 430px) {footer {position: absolute; bottom: 10px; width: calc(100vw - 20px);}}</style>
+
+<body onload="toggleAudio()">
 
   <iframe src="audio/silence.mp3" allow="autoplay" id="audio" hidden></iframe>
   <audio id="myAudio" src="audio/dailylife.mp3" controls autoplay hidden></audio>
@@ -42,9 +44,17 @@
 
     <nav>
 
-        <div class="hambutton"><a href="menu(SAKI0522).html"><p>MENU</p></a><div>
-        <div class="hambutton"><a href="info.html"><p>INFO</p></a><div>
-        <div class="hambutton"><a href="reservation.html"><p>RESERVATIONS</p></a></div>
+      <div class="hambutton"><a href="menu(SAKI0522).html">
+          <p>MENU</p>
+        </a>
+        <div>
+          <div class="hambutton"><a href="info.html">
+              <p>INFO</p>
+            </a>
+            <div>
+              <div class="hambutton"><a href="reservation.html">
+                  <p>RESERVATIONS</p>
+                </a></div>
 
     </nav>
 

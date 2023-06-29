@@ -3,6 +3,12 @@ body{
     padding-bottom: 10px;
 }
 
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 20px);
+}
+
 /* contactform */
 .contact {
     color: black;
