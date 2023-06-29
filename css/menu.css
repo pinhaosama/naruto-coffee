@@ -1,0 +1,181 @@
+/* mobile */
+
+body {
+    background-color: #ff964f;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+* {
+    font-family: arial;
+    border-radius: 5px;
+}
+
+.floatmenu {
+    margin-left:10px;
+}
+
+.floatmenu img {
+    width: 90%;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.floatmenu p {
+    text-align: left;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* drinkmenu */
+.grid img {
+    height: auto;
+    width: 50%;
+}
+
+.grid {
+    background-color: antiquewhite;
+    color: black;
+    font-family: 'Cherry Swash', cursive;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px 6%;
+    text-align: center;
+}
+
+.grid-menu {
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menubottom {
+    display: flex;
+    clear: both;
+    padding: 5px;
+    background-color: antiquewhite;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menubottom span {
+    color: red;
+}
+
+
+.menu img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.food li {
+    margin-top: 20px;
+}
+
+.backbutton {
+    text-align: center;
+}
+
+/* tablet */
+@media screen and (min-width:768px) {
+    .floatmenu img {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .menubottom {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: antiquewhite;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+}
+
+/* tablet horizontal size */
+@media (orientation: landscape) {
+    .menubottom {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: antiquewhite;
+        width: 80%;
+        margin-top: 10px auto;
+    }
+}
+
+
+/* display */
+@media screen and (min-width:1024px) {
+    .floatmenu img {
+        width: 50%;
+        height: auto;
+        float: left;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grid {
+        background-color: antiquewhite;
+        color: black;
+        font-family: 'Cherry Swash', cursive;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap: 24px 6%;
+        text-align: center;
+    }
+
+    /* button */
+    .menubottom {
+        clear: both;
+        padding: 10px;
+        background-color: antiquewhite;
+        width: 80%;
+        margin-top: 10px;
+        margin-left: 20px;
+        justify-content: flex-start;
+    }
+
+    .menubottom span {
+        color: red;
+    }
+
+    .backbutton {
+        text-align: left;
+    }
+
+}
